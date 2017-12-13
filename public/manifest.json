@@ -14,6 +14,6 @@
             "38": "images/logo.png"
         },
         "default_title": "FE cheatsheets collector",
-        "default_popup": "popup.html"
+        "default_popup": "index.html"
     }
 }

@@ -1,5 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,900);
 
 html, body, :global(#root) {
   height: 100%;
+  background: #2d2d2d;
+  font-family: Lato;
+  color: #FFF;
 }
 
+:global(.thin) {
+  font-weight: 300;
+  color: #FFF;
+}
+
+li {
+  list-style: none,
+}
+
+:global(.awrapper) {
+  display: inline-block;
+  position: relative
+}
+
+a {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+a::before, a::after {
+  content: '';
+  border-bottom: 1px solid #FFF;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+}
+
+a::before {
+  left: 0
+}
+
+a::after {
+  right: 0
+}
+
+a:hover::before, a:hover::after {
+  width: 50%;
+  transition: all .3s
+}
